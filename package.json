@@ -1,0 +1,29 @@
+{
+  "name": "WebApp",
+  "version": "1.0.0",
+  "description": "![alt](https://s8.postimg.org/wojealcnp/logo1.jpg) # Data WebApp. *A web application built by the Super4minions as a project for the 3rd week of the GSG full time coding bootcamp.* https://super4minions.github.io/WebApp/",
+  "main": "src.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack -p --progress",
+    "dev": "webpack --progress --color --watch & nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "^6.24.0",
+    "handlebars": "^4.0.6",
+    "hapi": "^16.1.0",
+    "hapi-react-views": "^9.2.1",
+    "inert": "^4.1.0",
+    "request": "^2.81.0",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.3.2"
+  }
+}
