@@ -1,7 +1,7 @@
 const utils = require('./utils.js');
 const vision = require('vision');
 const React = require ('react');
-const ReactDOM = require('react-dom');
+const ReactDOM = require('react-dom')
 // const test = require('./views/test.js');
 function index (request,reply){
 

@@ -2,6 +2,7 @@ const hapi = require('hapi');
 const handler = require('./handler.js');
 const vision = require('vision');
 const server = new hapi.Server();
+// const test = require('test');
 const inert = require('inert');
 server.connection({
   port:3000
