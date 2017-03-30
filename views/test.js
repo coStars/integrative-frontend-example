@@ -1,40 +1,25 @@
 import {render} from 'react-dom'
 import React from 'react'
 import  * as utils from '../utils.js';
-import Select from 'react-select';
-
-function getoption(cb){
-
+function co (cb){
   utils.country(function(err,data){
     const body =JSON.parse(data.body);
     const con =body.countries;
-    var options = con.map(function(obj) {
-       var rObj = {value: "",
-       label:""
-
-       };
-       rObj.value = con[obj-1];
-       rObj.label = con[obj-1];
-       return rObj;
-    });
-    
-
-
-cb(options)
+    // var options = con.map(function(obj) {
+    //    var rObj = {value: "",
+    //    label:""   };
+    //    rObj.value = con[con.indexOf(obj)];
+    //    rObj.label = con[con.indexOf(obj)];
+    //    return rObj;
+    // });
+cb(con)
   })
-
 }
-getoption(function(options){
-  function logChange(val) {
-    console.log("Selected: " + val);
-  }
-render (<Select
-  name="selectcontry"
-  value="one"
-  options={options}
-  onChange={logChange}
-
-/>
-
-,document.getElementById('select-container'))
-})
+co(function(options){
+  console.log(options);
+  render (
+    <select>
+      options.map(name => console.log("name"+name);
+      <option value={name}>{name}</option>)
+    </select>
+,document.getElementById('select-container'))})
