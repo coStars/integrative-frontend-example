@@ -111,7 +111,6 @@ function gchart(d, p) {
         chart4.draw(data4, options4);
     }
 }
-
 module.exports = {
     getlocation:getlocation,
     country: country,

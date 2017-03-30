@@ -38,6 +38,15 @@ server.route({
     }
   }
 });
+server.route({
+  method: 'GET',
+  path: '/assets/{file*}',
+  handler: {
+    directory: {
+      path: 'assets'
+    }
+  }
+});
 server.start((err) => {
     if (err) {
         throw err

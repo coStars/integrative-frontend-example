@@ -19,6 +19,7 @@
     "inert": "^4.1.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-select": "^1.0.0-rc.3",
     "request": "^2.81.0",
     "vision": "^4.1.1"
   },
