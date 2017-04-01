@@ -27,7 +27,7 @@ server.route({
 server.route({
   method:"POST",
   path:"/",
-  handler:handler.index
+  handler:handler.indexPOST
 })
 server.route({
   method: 'GET',
@@ -47,6 +47,7 @@ server.route({
     }
   }
 });
+
 server.start((err) => {
     if (err) {
         throw err

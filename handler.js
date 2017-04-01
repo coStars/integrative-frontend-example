@@ -36,5 +36,6 @@ console.log(request.paylod.value);
 
 
 module.exports={
-  index:index
+  index:index,
+  indexPOST:indexPOST
 }
