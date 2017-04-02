@@ -1,5 +1,5 @@
 import {render} from 'react-dom'
-import React from 'react'
+import React ,{Component} from 'react'
 import  * as utils from '../utils.js';
 import axios from 'axios';
 
@@ -7,11 +7,11 @@ utils.country(function(err, data) {
   const countries = JSON.parse(data.body).countries;
 
   render(
-    <select id ="myList" onClick={this.contr}>
+    <select id ="myList" onChange="contr();">
       {
         countries.map(
           name =>
-            <option value={ name }>{ name }</option>
+            <option onClick={this.onChange} value={ name }>{ name }</option>
         )
       }
     </select>,

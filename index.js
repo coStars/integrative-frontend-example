@@ -29,14 +29,7 @@ server.route({
   path:"/",
   handler:handler.indexPOST
 })
-server.route({
-  method: 'GET',
-  path: '/assets/js/{file*}',
-  handler: {
-    directory: {
-      path: 'assets/js'
-    }
-  }
+
 });
 server.route({
   method: 'GET',

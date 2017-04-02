@@ -37,32 +37,6 @@
 
 </body>
 <script type="text/javascript" src="assets/js/bundle.js"></script>
-<script>
- function f (){
-  function request(value) {
-      var xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function() {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-          }
-      };
-      xhr.open("POST",'/', true);
-      xhr.send(value);
-  }
-  console.log("select")
-  var select = document.getElementById("myList");
-  console.log(select);
-  select.addEventListener('change',  function(){
-
-        var value =select.value;
-        request(value)
-
-  });
-
-
-}
-
-
-</script>
-
+<script src="assets/js/js.js" charset="utf-8"></script>
 
 </html>

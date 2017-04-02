@@ -1,4 +1,5 @@
-window.onload= function(){
+function contr(){
+  console.log("A");
   function request(value) {
       var xhr = new XMLHttpRequest();
       xhr.onreadystatechange = function() {
